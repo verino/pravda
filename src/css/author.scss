@@ -1,0 +1,33 @@
+/* AUTHOR-CSS */
+body{
+  position: relative;
+  margin-bottom: 160px;
+}
+.top-header{
+  padding-top: 25px;
+  @include clearfix;
+
+}
+
+.logo{
+  @include span(2 of 11);
+}
+
+a.logo{
+  width: 140px;
+  height: 57px;
+  display: block;
+}
+
+a.basket{
+  padding-top: 35px;
+}
+
+.basket:hover i{
+  color: #fa5559;
+  text-decoration: none;
+  @include transition;
+}
+
+
+

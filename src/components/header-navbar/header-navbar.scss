@@ -1,0 +1,134 @@
+/* HEADER-NAVBAR */
+.header-navbar{
+	background-color: #555;
+	min-height: 42px;
+	line-height: 42px;
+	font-size: 12px;
+}
+
+.header-logo{
+	@include span(3 wide);
+	margin: 0;
+}
+
+
+a.logo-navbar{
+	@include link(#fff,#fff,#fff);
+	@include bg-variant($color-primary,$color-primary-hover,$color-primary-focus);
+	@include box-shadow( 0, -5px, 0, rgba(0,0,0,.24), inset);
+	color: #fff;
+	padding: 0 8px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 42px;
+	text-align: center;
+	margin-top: 0;
+	display: block;
+	text-transform: uppercase;
+	&:hover,&:focus{
+	text-decoration: none;
+	}
+}
+
+
+.search{
+		@include span(3 wide);
+		margin: 0;
+	form{
+		position: relative;
+	}
+	.search-input{
+		display: inline-block;
+		border: none;
+		width: 100%;
+		height:auto;
+		color: #fff;
+		font-size: 17px;
+		background-color: transparent;
+		padding: 0 45px;
+		&:hover +.icon-search{
+			@include opacity(1);
+		}
+		&:focus{
+			background-color: #fff;
+			color: #000;
+			outline: none;
+			line-height: 43px;
+			&+.icon-search{
+				color:$color-primary;
+				opacity: 1;
+			}
+		}
+	}
+	.icon-search{
+		position: absolute;
+		top: 0;
+		@include opacity(0.3);
+		line-height: 40px;
+		border: 0;
+		padding-left: 15px;
+		color:#fff;
+		z-index: 2;
+	}
+
+}
+
+.header-links{
+	@include span(4 wide);
+	@include list-clear;
+	line-height: 42px;
+	li{
+		@include span(2 of 4 wide);
+		margin: 0;
+	}
+	a{
+		color: #fff;
+		font-size: 14px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		padding: 0 10px;
+		&:hover{
+			text-decoration: none;
+			& i{
+				@include opacity(1);
+			}
+		}
+		&:focus{
+			@include opacity(.6);
+			background-color: #161d29;
+			& i{
+				@include opacity(0.5);
+			}
+		}
+	}
+	i{
+		color:#fff;
+		@include opacity(0.3);
+		margin-right: 10px;
+	}
+}
+
+.basket_active{
+	background-color: $color-primary;
+}
+
+.navbar-order{
+	@include span(2 wide last);
+	margin: 0;
+	line-height: 40px;
+	.order-btn{
+		height: auto;
+		@extend %btn;
+		color: #fff;
+		width: 100%;
+		font-weight: normal;
+		font-size: 17px;
+		text-transform: none;
+		@extend %btn-secondary;
+		&:focus{
+			@include opacity(0.5);
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+/* NAV-SIMPLE*/
+.main{
+  @include push(2);
+  @include span(6);
+  padding-top: 5px;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      padding: 0 20px;
+      margin-bottom: 15px;
+    }
+    li:first-child{
+      padding-left: 0;
+    }
+    li:last-child{
+      padding-right: 0;
+    }
+    a{
+      @include navlink;
+    }
+  }
+}
+
+
