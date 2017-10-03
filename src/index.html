@@ -1,51 +1,182 @@
-//= template/head.html
-<!-- //= components/jscomponents/slideout-nav/slideout.html
-//= components/jscomponents/slidetop-nav/slidetop-nav.html
-<main id="panel">
-		<button id="showTop" class="btn-menu">Show/Hide Top Slide Menu</button>
-<button class="js-toggle-button">☰</button> -->
-//= components/header-navbar/header-navbar.html
-//= template/header.html
-<div class="container">
-	//= components/nav/nav-stacked-pills.html
-	//= components/nav/nav-justified.html
-	//= components/nav/nav-light-pills.html
-	//= components/search/search.html
-	//= components/jscomponents/slider/slider.html
-</div>
-	<div class="bottom-header">
-		<div class="container">
-			//= components/jscomponents/range-filter/range-filter.html
-			//= components/sorting/sorting.html
-			//= components/jscomponents/accordion/accordion.html
-			//= components/rating/rating.html
-			//= components/jscomponents/tabs/tabs.html
-			//= components/table/table-striped.html
-			//= components/pager/pager.html
-			//= components/form/form-base.html
-			//= components/form/form-horisontal.html
-			//= components/form/form-inline.html
-			//= components/form/select.html
-			//= components/form/radio-checkbox.html
-			//= components/form/radio-checkbox-inline.html
+//= template/top-head.html
+<section class="content">
+	<div class="left-column js-cln">
+		<div class="news news--crime">
+			<div class="news__header">
+				<a href="" class="archive">Архив»</a>
+				<h5 class="news__name news__name--crime"><a href="">Преступление без наказания</a></h5>
+			</div>
+			<div class="news__body">
+				<div class="news__media news__media--video media-news"><iframe class="media-news__content" src="https://www.youtube.com/embed/L9RQj_qxTWM" frameborder="0" allowfullscreen></iframe></div>
+				<h2 class="news__title"><a href="detection2.html">Старики и разбойники</a></h2>
+				<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				<div class="news__entry">
+					<p>Живет в столице нашей родины городе-герое Мокве пожилая женщина, Семенова Елизавета Геннадьевна, 82 лет от роду. Вполне, славатебегосподи, здоровенькая, разумная и даже энергичная.
+					</p>
+					<p>Звонит она как-то своей соседке Варьке и очень спешно, вот просто немедленно, сию минуту просит взаймы, ненадолго, 130 тысяч рублей. Очень, очень, говорит, надо. Ничего себе, думает Варвара, гуляет наша Елизавета. Стала она выяснять, в чем дело, отчего вдруг такая срочная надобность.</p>
+				</div>
+				<div class="news__footer">
+					<a href="detection2.html" class="news__actions">Комментарии <span class="messages">(сообщений 45)</span></a>
+					<a href="" class="archive">Архив»</a>
+				</div>
+			</div>
+			<ul class="news__comments comments">
+				<li class="comments__item">
+					<img src="img/persona-img.png" alt="">
+					<div class="comments__body">
+						<div class="commentator">
+						<div class="commentator__name">Василий Игнатов<span class="commentator__position">, следователь ГСУ г.Москвы</span></div></div>
+						<div class="comments__text"><p>Эта группа мошенников уже давно разыскивается нами за совершение аналогичных преступлений. Всего на их счету 12 подобных эпизодов, когда пострадали пожилые люди. Один человек из этой группы уже задержан и дает показания.</p></div>
+						<div class="comments__footer">
+							<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+							<a class="comments__reply"> Ответить</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class=" news news--prison ">
+			<div class="news__header">
+				<a href="" class="archive">Архив»</a>
+				<h5 class="news__name news__name--prison"><a href="">Громкое дело</a></h5>
+			</div>
+			<div class="news__body">
+				<h2 class="news__title"><a href="search_true2.html">Ярославский инциндент</a></h2>
+				<div class="news__entry">
+					<p>Наш корреспондент отправился в Ярославль, для того, чтобы выяснить: брал все-таки Урлашов или не брал? И кто выиграл от его внезапного ареста перед выборами?
+					</p>
+				</div>
+				<div class="news__media    media-news"><img  class="media-news__content" src="img/prison_img.png" alt=""></div>
+				<div class="news__comments comments comments--full">
+				<div class="commentator"><span class="commentator__name">Нона Перес</span></div>
+					<div class="comments__text"><p>Мосгорсуд признал отрешение Урлашова от должности мэра Ярославля законным. Басманное правосудие в действии. Расправа над Урлашовым возмущает ярославцев и честно едорасы выиграть выборы 8 сентября не могут. Ни одного голоса Единой России становится главным лозунгом ярославских выборов."</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="news news--true">
+			<div class="news__header">
+				<a href="" class="archive">Архив»</a>
+				<h5 class="news__name news__name--true"><a href="">Правда есть!</a></h5>
+			</div>
+			<div class="news__body">
+				<div class="news__list news__list--true">
+					<h5 class="news__title"><a href="">Гендиректора судят за продажу целого автопарка взятых в лизинг машин</a></h5>
+					<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				</div>
+				<div class="news__list news__list--true">
+					<h5 class="news__title"><a href="">Посетитель аттракциона отсудил на лечение за границей обезображенного лица 800 000</a></h5>
+					<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				</div>
+				<div class="news__list news__list--true">
+					<h5 class="news__title"><a href="">Возбуждено дело на инспектора ДПС, застрелившего 18-летнего водителя</a></h5>
+					<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				</div>
+				<div class="news__list news__list--true">
+					<h5 class="news__title"><a href="">Начался суд над предпринимателем, наехавшим на судебного пристава на автомобиле</a></h5>
+					<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				</div>
+				<div class="news__list news__list--true">
+					<h5 class="news__title"><a href="">Наверху в 3-х анонсах: Сотрудники "Риглы" спорят, кто первый обезвредил убийцу</a></h5>
+					<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				</div>
+			</div>
 		</div>
 	</div>
-	<section class="content">
-		<div class="container">
-			//= components/items/items.html
-			//= components/thumbnails/thumbnails.html
-			//= components/form/input-value.html
-			//= components/jscomponents/tooltip/tooltip.html
-			//= components/jscomponents/datepicker/datepicker.html
-			//= components/breadcrumbs/breadcrumbs.html
-			//= components/list-checked/list-checked.html
-			//= components/pagination/pagination.html
-			//= components/progressbar/progressbar.html
-			//= components/jscomponents/map/map.html
-		
+	<div class="right-column js-cln">
+		<div class="news news--search-true">
+			<div class="news__header">
+				<a href="" class="archive">Архив»</a>
+				<h5 class="news__name news__name--search-true"><a href="">Ищем правду</a></h5>
+			</div>
+			<div class=" news__body--wide">
+				<div class="news__media news__media--small media-news"><iframe class="media-news__content media-news__content--small" src="https://www.youtube.com/embed/L9RQj_qxTWM" frameborder="0" allowfullscreen></iframe></div>
+				<h2 class="news__title"><a href="">Как попасть в больницу и остаться в живых</a></h2>
+				<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				<div class="news__entry">
+					<p>В воскресенье, 25 августа, москвичка Анна Новикова написала в своем блоге в ЖЖ пост о том, как ее муж едва не лишился ноги из-за того, того, что бригада скорой помощи отказалась его госпитализировать, сославшись на новые правила. Врачи, работающие на скорой, подтверждают, что многие из них уже успели ознакомиться с инструкцией. В департаменте здравоохранения говорят, что правила на самом деле старые, а городские власти просто пытаются разгрузить скорую, передав часть ее функций врачам неотложки.
+
+					</p>
+				</div>
+			</div>
+			<ul class="news__comments comments--special  comments ">
+				<li class="comments__item comments__item">
+					<div class="commentator">
+						<span class="commentator__weight rubric expert">Мнение эксперта:</span>
+						<span class="commentator__name">Михайлова Ольга Владимировна, юрист, специалист по  гражданскому праву</span>
+					</div>
+					<p class="comments__text">Есть несколько способов защитить себя в том случае, если вы пострадали от действия или бездействия медицинских работников.</p>
+				</li>
+				<li class="comments__item comments__item">
+					<div class="commentator">
+						<span class="commentator__weight rubric">Наш корреспондент:</span>
+						<span class="commentator__name">Нона Перес</span>
+					</div>
+					<p class="comments__text">В приказе, подписанном главврачом станции имени Пучкова, приводится список диагнозов, при которых пациентов следует не госпитализировать, а обеспечить им «динамическое наблюдение в лечебно-профилактическом учреждении». Согласно приказу врачи скорой помощи не должны везти в больницу пациентов с бронхиальной астмой, эпилепсией, гипертоническим кризом (неосложненным), ангиной при температуре выше 39 градусов. Таким образом</p>
+				</li>
+			</ul>
+			<div class="text-center"><a class="btn-see-other">Посмотреть другие случаи</a></div>
 		</div>
-	</section>
-	//= components/footerbig/footerbig.html
-	<!-- </main> -->
-	//= components/jscomponents/popup/popup.html
+		<div class="news news--speak">
+			<div class="news__header">
+				<a href="" class="archive">Архив»</a>
+				<h5 class="news__name news__name--speak"><a href="">Пусть говорят</a></h5>
+			</div>
+			<div class="news__body">
+				<h2 class="news__title"><a href="">Допустимая мера самообороны. Менять закон или нет?</a></h2>
+				<time datetime="2012-02-13 21:06" class="date-time">13.02.2012 21:06</time>
+				<div class="news__entry">
+					<p>Важность изменения текущего законодательства о пределах допустимой самообороны подчеркивается сторонникам идеи легализации гражданского короткоствольного огнестрельного оружия. Действительно, российская тюрьма.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="news news--advice">
+			<div class="news__header">
+				<h5 class="news__name news__name--advice "><a href="">По закону</a></h5>
+			</div>
+			<div class="board">
+				<h2 class="board__title">Консультация <span>специалиста онлайн</span></h2>
+				<div class="board__entry">
+					Вымогают взятку? Как быть в подобных ситуациях? Расскажут наши эксперты &rarr;
+				</div>
+				<a class="btn-see-details">Узнать подробности</a>
+			</div>
+			<div class="interview">
+				<div class="interview__header">
+					<span class="news__name news__name--interview ">Вы думаете что...</span>
+
+				</div>
+					<div class="interview__body">
+					<h2 class="interview__title">Какие последствия будут у африканского ДТП Вячеслава Лебедева?</h2>
+					<div class="interview__list">
+						//= components/list-checked/list-checked.html
+					</div>
+					</div>
+
+			</div>
+		</div>
+		<div class="news news--finally">
+			<div class="news__header">
+				<h5 class="news__name news__name--finally"><a class="dottes" href="">Ставим точку</a></h5>
+			</div>
+			<div class="news__body">
+				<div class="news__list news__list--finally">
+					<div class="news__img"><img src="img/img1.png" alt=""></div><h5 class="news__title"><a class="dottes" href="">Конец Трансвааля. Кто следующий?
+					Нападавших он не помнит, но прокуратура уверена, что один из подсудимых был среди них</a></h5>
+					
+				</div>
+				<div class="news__list news__list--finally">
+					<div class="news__img"><img src="img/img2.png" alt=""></div><h5 class="news__title"><a class="dottes" href="">"Все отсылки к Конституции здесь недействительны" Апелляция не решила, законно ли ФСФР оштрафовала МТС за отказ</a></h5>
+					
+				</div>
+				<div class="news__list news__list--finally">
+					<div class="news__img"><img src="img/img3.png" alt=""></div><h5 class="news__title"><a class="dottes" href="">Важнейшие правовые темы в прессе Председателя ВС РФ определили в Центральную клиническую больницу.- НКО получат еще 200 млн руб. от </a></h5>				
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+//= components/footersmall/footersmall.html
 //= template/endpage.html

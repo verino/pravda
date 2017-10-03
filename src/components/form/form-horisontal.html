@@ -1,28 +1,26 @@
-<form class="form-horizontal">
+<form class="form-horizontal comments__form">
 	<div class="form-group">
-		<label for="inputEmail3" class=" control-label">Email</label>
-		<div class="">
-			<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		<label for="inputName" class=" control-label">Имя <span class="star">*</span></label>
+		<div>
+			<input type="name" class="form-control" id="inputName" placeholder="Name">
+		</div>
+	<div class="form-group">
+		<label for="inputEmail" class=" control-label">Email <span class="star">*</span></label>
+		<div>
+			<input type="email" class="form-control" id="inputEmail" placeholder="Email">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="inputPassword3" class=" control-label">Password</label>
-		<div class="">
-			<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+		<label for="inputComment" class=" control-label">Комментарий <span class="star">*</span></label>
+		<div>
+			<textarea type="text" class="form-control input-comment" id="inputComment" placeholder="Text"></textarea>
 		</div>
 	</div>
-	<div class="form-group">
-		<div class="">
-			<div class="checkbox">
-				<label>
-					<input type="checkbox"> Remember me
-				</label>
-			</div>
-		</div>
 	</div>
+
 	<div class="form-group">
-		<div class="">
-			<button type="submit" class="btn ">Sign in</button>
+		<div>
+			<button type="submit" class="btn-publish ">Опубликовать</button>
 		</div>
 	</div>
 </form>

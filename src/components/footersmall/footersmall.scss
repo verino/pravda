@@ -1,58 +1,45 @@
 /* FOOTR-SMALL */
-.footer-small{
+.footer--small{
   position: absolute;//fixed 
-  bottom: 0;
-  min-height: 120px;
-  margin-bottom: -120px;//fixed must comment
   width: 100%;
-  background-color: #f1f1f1;
-  @include opacity(.9);
+  background-color: #f6f8f8;
   .container{
-    padding:35px 15px;
-  }
-  .tag, .social, .production{
-    @include span (4);
-  }
-  .tag{
-    font-weight: bold;
-    font-size: 21px;
-    padding-left: 60px;
-    padding-top: 10px;
+    padding:10px 0;
   }
 }
-
-.social{
-  a{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0;
-    text-transform: none;
-    font-weight: normal;
-    margin-right: 5px;
-    @extend %btn;
-    @extend %btn-secondary;
-    i{
-      color: #fff;
+.footer{
+  &__inner{
+    background-color: #f6f8f8;
+    @include clearfix;
+  }
+  &__social{
+    @include span(6.5 of 9);
+  }
+  &__heading{
+    background: url('../img/logo-small.png') left top no-repeat;
+    padding-left: 30px;
+    font: bold 12px Arial;
+    color: #878787;
+    span{
+      color: #cacbcb;
     }
   }
-}
-.production{
-  padding-top: 10px;
-  text-align: right;
-  padding-right: 40px;
-  a{
-    text-decoration: none;
-    color: #000;
+  &__text{
+    font: 11px Arial;
+    color: #bab9b9;
+    line-height: 15px;
+    padding: 8px 0 0 0
+  }
+  &__production{
+   @include span(2.5 of 9);
+   a{
+    display: block;
+    width: 88px;
+    height: 44px;
+    background: #d8d9d9;
+    float: left;
     margin-right: 10px;
-    display: inline-block;
   }
-  span{
-    margin-left: 10px;
-    vertical-align: middle;
-    color:#fff;
-    @extend %btn;
-    @extend %btn-small;
-    @extend %btn-secondary;
-  }
+
+}
 }

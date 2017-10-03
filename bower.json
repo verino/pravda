@@ -18,12 +18,7 @@
   "dependencies": {
     "susy": "^2.2.12",
     "jquery": "^2.2.1",
-    "magnific-popup": "^1.1.0",
-    "nouislider": "^9.2.0",
-    "wnumb": "^1.0.4",
-    "html5shiv": "^3.7.3",
-    "slick-carousel": "^1.6.0",
-    "jquery-ui": "^1.12.1",
-    "slideout.js": "^1.0.1"
+    "jcarousel": "^0.3.5",
+    "matchHeight": "matchheight#^0.7.2"
   }
 }

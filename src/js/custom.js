@@ -1,43 +1,51 @@
 $(function() {
-//*Google map https://developers.google.com/maps/documentation/javascript/tutorial?hl=ru  https://snazzymaps.com/
-//= ../components/jscomponents/map/map.js
- 
-//*magnific-popup http://dimsemenov.com/plugins/magnific-popup/
-//= ../components/jscomponents/popup/popup.js
+
+	//jCarousel Plugin
+	$('#carousel').jcarousel({
+		vertical: true,
+		scroll: 1,
+		auto: 2,
+		wrap: 'last',
+		initCallback: mycarousel_initCallback,
+	});
 
 
-//* input value
-//= ../components/form/input-value.js
+	//Combine jCarousel with Image Display
+	$('div#slideshow__carousel li a').click(function() {
 
-// *slideout https://github.com/mango/slideout#installation  ЗАКОММЕНТИРОВАНО(НУЖНО //=)
-// = ../components/jscomponents/slideout-nav/slideout.js
+		$('div#slideshow__main li').removeClass('act');
+		$('div#slideshow__main li.' + $(this).attr('rel')).addClass('act');
 
-// *slidetop-nav https://tympanus.net/codrops/2013/04/17/slide-and-push-menus ЗАКОММЕНТИРОВАНО(НУЖНО //=)
-// = ../components/jscomponents/slidetop-nav/slidetop-nav.js
+		return false;
+	});
+	// list-checked active
+	$('.list-checked  input[type="radio"]+label').click(function() {
+		$('.list-checked  input[type="radio"]+label').removeClass('active'),
+			$(this).addClass('active');
+	});
+	// match-height
+	$('.js-cln').matchHeight();
 
+	//overflow text
+	var size = 46,
+    newsContent= $('.news__list--finally .news__title--small a'),
+    newsText = newsContent.text();
+    
+if(newsText.length > size){
+	newsContent.text(newsText.slice(0, size) + ' ...');
+}
 
-//* datepicker http://api.jqueryui.com/datepicker/ 
-//= ../components/jscomponents/datepicker/datepicker-init.js
-
-
-//*Fixed header when scroll*//
-//= ../components/header-navbar/fixed-nav.js
-
-
-//* range slider https://refreshless.com/nouislider/
-//= ../components/jscomponents/range-filter/range-filter-init.js
-
-
-//* slick.js http://kenwheeler.github.io/slick/
-//= ../components/jscomponents/slider/slider-init.js
-
-
-//* Tooltip http://getbootstrap.com/javascript/#tooltips
-//= ../components/jscomponents/tooltip/tooltip-init.js
+});
 
 
-// * Аякс отправка форм
-//= ../components/jscomponents/popup/ajax-form.js
- 
+//Carousel Tweaking
 
-})
+function mycarousel_initCallback(carousel) {
+	  // Pause autoscrolling if the user moves with the cursor over the clip.
+  carousel.clip.hover(function() {
+    carousel.stopAuto();
+  }, function() {
+    carousel.startAuto();
+  });
+
+}
